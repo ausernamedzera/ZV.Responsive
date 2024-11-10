@@ -320,11 +320,17 @@
     }
     #works{
         flex-direction: column;
+    }
+    .work-card{
         width: 90%;
     }
     #products {
         flex-direction: column;
+        
+    }
+    .product{
         width: 90%;
+        margin: 10px;
     }
     #contact {
         flex-direction: column;
@@ -333,5 +339,47 @@
     #footer {
         flex-direction: column;
         width: 90%;
+    }
+}
+/* Tablet */
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    #team-cards {
+        flex-wrap: wrap;
+        justify-content: space-around; 
+    }
+    .card{
+        width: 48%;
+    }
+    #works{
+        justify-content: space-around; 
+        flex-wrap: wrap;
+    }
+    .work-card{
+        width: 40%;
+    }
+    #products {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .product{
+        width: 45%;
+        margin: 10px;
+    }
+    #contact{
+        flex-direction: column;
+        
+        
+    }
+    #contact-info{
+        align-items: center;
+        width: 45%;
+        
+    }
+
+    #footer {
+        flex-direction: column;  
     }
 }
